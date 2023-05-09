@@ -1,0 +1,10 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: gp3
+provisioner: ebs.csi.aws.com
+volumeBindingMode: WaitForFirstConsumer # 볼륨바인딩 모드
+reclaimPolicy: Delete
+parameters:
+  csi.storage.k8s.io/fstype: ext4
+  type: gp3

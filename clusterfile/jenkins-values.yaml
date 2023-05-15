@@ -7,7 +7,7 @@ controller:
   - git
   - configuration-as-code
   - pipeline-stage-view
-  adminPassword: "admin"
+  adminPassword: "dailypt"
 
 persistence:
   storageClass: "gp3"

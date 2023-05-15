@@ -3,7 +3,7 @@ kind: StorageClass
 metadata:
   name: gp3
 provisioner: ebs.csi.aws.com
-volumeBindingMode: WaitForFirstConsumer # 볼륨바인딩 모드
+volumeBindingMode: WaitForFirstConsumer
 reclaimPolicy: Delete
 parameters:
   csi.storage.k8s.io/fstype: ext4

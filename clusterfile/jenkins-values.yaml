@@ -2,12 +2,18 @@ controller:
   tag: "lts-jdk11"
   serviceType: LoadBalancer
   installPlugins:
-  - kubernetes
-  - workflow-aggregator
-  - git
-  - configuration-as-code
-  - pipeline-stage-view
+    - kubernetes
+    - workflow-aggregator
+    - git
+    - configuration-as-code
+    - pipeline-stage-view
   adminPassword: "dailypt"
 
 persistence:
-  storageClass: "gp3"
+  storageClass: "dailypt"
+
+serviceAccount:
+  create: false
+  name: jenkins
+  annotations: {}
+

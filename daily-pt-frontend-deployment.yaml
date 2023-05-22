@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: frontend-deployment
-        image: nginx:alpine
+        image: suhwan11/test1:test-frontendv2
         ports:
           - containerPort: 80
             protocol: TCP

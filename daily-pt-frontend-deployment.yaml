@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: frontend-deployment
-        image: suhwan11/test1:test-frontendv7
+        image: suhwan11/test1:test-frontendv8
         ports:
           - containerPort: 80
             protocol: TCP

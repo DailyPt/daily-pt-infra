@@ -5,6 +5,9 @@ metadata:
   labels:
     tier: frontend
   annotations:
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:844474013237:certificate/dc95b655-ff3b-41b0-9548-b39d4b7102ba
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
+    alb.ingress.kubernetes.io/tls-redirect: '443'
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: instance

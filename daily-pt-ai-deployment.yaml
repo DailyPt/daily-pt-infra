@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-deployment
+  labels:
+    tier: ai
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      tier: ai
+  template:
+    metadata:
+      name: ai-deployment
+      labels:
+        tier: ai
+    spec:
+      containers:
+      - name: ai-deployment
+        image: nginx:alpine
+        ports:
+          - containerPort: 80
+            protocol: TCP

@@ -19,5 +19,5 @@ spec:
       - name: ai-deployment
         image: suhwan11/test1:aitestv2
         ports:
-          - containerPort: 80
+          - containerPort: 5000
             protocol: TCP

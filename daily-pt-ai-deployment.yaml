@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: ai-deployment
-        image: suhwan11/daily-pt-ai:1
+        image: suhwan11/daily-pt-ai:3
         ports:
           - containerPort: 5000
             protocol: TCP

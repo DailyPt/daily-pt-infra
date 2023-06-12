@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: ai-deployment
-        image: suhwan11/test1:aitestv2
+        image: suhwan11/test1:aitestv3
         ports:
           - containerPort: 5000
             protocol: TCP

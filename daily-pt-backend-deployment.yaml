@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend-deployment
-        image: suhwan11/daily-pt-backend:79
+        image: suhwan11/daily-pt-backend:81
         ports:
           - containerPort: 8080
             protocol: TCP

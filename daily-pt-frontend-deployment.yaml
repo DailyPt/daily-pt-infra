@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: frontend-deployment
-        image: suhwan11/daily-pt-frontend:7
+        image: suhwan11/daily-pt-frontend:16
         ports:
           - containerPort: 80
             protocol: TCP
